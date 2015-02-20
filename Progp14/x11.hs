@@ -7,7 +7,7 @@ counter (x:xs) a b c d
 	|(ord x == 95) = counter xs a b (c+1) d
 	|otherwise = counter xs a b c (d+1)
 getuses :: String -> [String]
-getuses s  = [show$ fromIntegral a/fromIntegral len, show$ fromIntegral b/fromIntegral len,show$ fromIntegral c/fromIntegral len, show $fromIntegral d/ fromIntegral len]
+getuses s  = [show$ fromIntegral c/fromIntegral len, show$ fromIntegral a/fromIntegral len,show$ fromIntegral b/fromIntegral len, show $fromIntegral d/ fromIntegral len]
 	where
 	(a,b,c,d) = counter s 0 0 0 0
 	len = length s
