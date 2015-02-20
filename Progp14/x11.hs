@@ -16,7 +16,7 @@ getuses s  = [show$ fromIntegral c/fromIntegral len, show$ fromIntegral a/fromIn
 main = do
     x <- getLine
     let y = getuses x
-    mapM_ print y
+    mapM_ putStrLn y
 
 	
 
